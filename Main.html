@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import "style.css";
+    </style>
+    <title>Title</title>
+    <script src="input.js"></script>
+</head>
+<body>
+    <form name="askedForm" onsubmit="return submitForm()" method="post" autocomplete="on">
+        <fieldset>
+            <div class="field header-field">
+                <div class="header">Форма запроса</div>
+            </div>
+
+            <div class="field">
+                    <input type="text" name="lastname"><br>
+                <label>Фамилия: </label>
+                <div class="error" id="lastnameErr"></div>
+            </div>
+
+            <div class="field">
+                    <input type="text" name="firstname" value="Артур"><br>
+                    <div class="error" id="firstnameErr"></div>
+                <label>Имя:</label>
+            </div>
+
+            <div class="field">
+                    <input type="text" name="middlename" value="Юрисович"><br>
+                    <div class="error" id="middlenameErr"></div>
+                <label >Отчество: </label>
+            </div>
+
+            <div class="field">
+                    <input type="text" name="snils" value="333-333-333 00" title="Введите числа n вида nnn-nnn-nnn nn"><br>
+                    <div class="error" id="snilsErr"></div>
+                <label>СНИЛС:</label>
+            </div>
+
+            <div class="field">
+                    <input type="text" name="dateofbirth" value="24.10.2000" title="Введите дату вида dd.mm.yyyy"><br>
+                    <div class="error" id="datebirthErr"></div>
+                <label>Дата рождения:</label>
+            </div>
+
+            <div class="field">
+                    <select name="availabilityofdata">
+                        <option value="Да">Да</option>
+                        <option value="Нет">Нет</option>
+                    </select>
+                <label>Наличие данных:</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="field header-field">
+                <div class="header">Общая продолжительность стажа на дату обращения гражданина</div>
+            </div>
+            <div class="field">
+                    <input type="number" name="years" value="0"><br>
+                <div class="error" id="yearsErr"></div>
+                <label>Общая продолжительность страхового стажа лет:</label>
+            </div>
+
+            <div class="field">
+                    <input type="number" name="months" value="0"><br>
+                <div class="error" id="monthsErr"></div>
+                <label>Общая продолжительность страхового стажа месяцев:</label>
+            </div>
+
+            <div class="field">
+                    <input type="number" name="days" value="0"><br>
+                <div class="error" id="daysErr"></div>
+                <label>Общая продолжительность страхового стажа дней:</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Сохранить">
+
+        <div class="field">
+            <div class="header">Форма запроса</div>
+            <div class="field internal">
+                <textarea id="req" name="request" rows="2" readonly></textarea>
+                <label for="req">Запрос</label>
+            </div>
+        </div>
+    </form>
+</form>
+</body>
+</html>
