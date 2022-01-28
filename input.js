@@ -24,7 +24,6 @@ function validateAskedForm() {
     var middlename = document.askedForm.middlename.value;
     var snils = document.askedForm.snils.value;
     var datebirth = document.askedForm.dateofbirth.value;
-    var data = document.askedForm.availabilityofdata.value;
 
     var years = document.askedForm.years.value;
     var months = document.askedForm.months.value;
@@ -72,7 +71,7 @@ function validateAskedForm() {
     }
 
     if(years < 0 || years > 999){
-        printError("yearsErr", "Пожалуйста, введите корректные годы!");
+        printError("yearsErr", "Пожалуйста, введите корректный стаж лет!");
     } else {
         printError("yearsErr", "");
         yearsErr = false;
@@ -80,14 +79,14 @@ function validateAskedForm() {
 
 
     if(months < 0 || months > 99){
-        printError("monthsErr", "Пожалуйста, введите корректные месяца!");
+        printError("monthsErr", "Пожалуйста, введите корректный стаж месяцев!");
     } else {
         printError("monthsErr", "");
         monthsErr = false;
     }
 
     if(days > 99 || days < 0){
-        printError("daysErr", "Пожалуйста, введите корректные дни!");
+        printError("daysErr", "Пожалуйста, введите корректный стаж дней!");
     } else {
         printError("daysErr", "");
         daysErr = false;

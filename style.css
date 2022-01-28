@@ -34,7 +34,7 @@ label {
 
 input[type=submit] {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #d734bc;
     color: white;
     padding: 14px 20px;
     margin: -18px 0 10px 0;
@@ -45,7 +45,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #d734bc;
 }
 
 .field {
@@ -58,16 +58,20 @@ input[type=submit]:hover {
     display: table;
 }
 
+.error{
+    height: 5px;
+}
+
 .header {
     height: 30px;
-    background-color: lightblue;
-    color: blue;
+    background-color: white;
+    color: #d734bc;
     font-family: sans-serif;
     padding: 5px 10px;
 }
 
 .header-field {
-    border-color: lightblue;
+    border-color: wheat;
     height: 60px;
 }
 
